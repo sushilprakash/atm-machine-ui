@@ -1,0 +1,23 @@
+<section class="wrapper">
+  <div class="header-wrapper">
+      <span></span>
+      <div class="header">
+         <img routerLink = "/home" src="/assets/images/logo-black.svg" alt="logo"> &nbsp;Internet Banking
+      <div class="header-subtitle">App...v1</div>
+      </div>
+  </div>
+  <div class="main-body">
+    <div class="content">
+        <h3>Notes Available are :&nbsp; <strong> &#8377; {{userDetails.currBalance}}</strong></h3><br>
+        <h3>Withdraw Amount :&nbsp; 
+          <strong> &#8377; <input class="transparent-input" appAutofocus type="number" [(ngModel)]="withdrawAmt" (keyup) = "onWithdraw()"></strong>
+        </h3>
+        <div class="line mt-4"></div>
+        <h3 class="mt-2">Current Balance : <strong> &#8377;&nbsp;{{updatedBalance}}</strong></h3>
+        <button class="btn btn-red" (click)= "onSubmit()">Proceed</button>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Regulatory Disclosures Hyperlink Policy Privacy Statement Site Terms Sitemap</span>
+  </div>
+</section>

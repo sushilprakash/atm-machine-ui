@@ -1,0 +1,155 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  margin: 0; }
+
+/* .logo {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 82px;
+  background: url("/assets/images/logo-black.svg");
+  background-size: 100px 82px; } */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 1px #ddd, 0 0px 10px #acacac; }
+  .wrapper .header-wrapper {
+    position: relative;
+    box-shadow: 0 5px 10px -7px; }
+    .wrapper .header-wrapper span {
+      display: block;
+      background: #000;
+      height: 10px; }
+    .wrapper .header-wrapper .header {
+      background: #fff;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding: 1rem; }
+    .wrapper .header-wrapper .header-subtitle {
+      position: absolute;
+      right: 1rem; }
+
+.main-body {
+  height: 554px;
+  overflow-y: auto;
+  padding: 1rem;
+  background: url("/assets/images/atm-bg.jpg");
+  background-size: cover;
+  position: relative; }
+  .main-body > h4 {
+    margin: -1rem;
+    padding: .5rem;
+    text-align: center;
+    background: #db0011;
+    color: #fff; }
+  .main-body .content {
+    position: absolute;
+    left: 2rem;
+    top: 8rem;
+    padding: 1.3rem;
+    background: rgba(255, 255, 255, 0.644);
+    height: 230px; }
+    .main-body .content h3 strong {
+      float: right;
+      color: #db0011; }
+    .main-body .content button {
+      position: absolute;
+      bottom: -4rem;
+      right: 0;}
+    .main-body h1{    
+      font-size: 4rem;
+      font-weight: 700;
+      color: #8e2121;
+      top: 4rem;
+      position: relative;}
+.footer {
+  padding: .4rem 1rem;
+  font-size: .8rem;
+  color: #fff;
+  background: #000; }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #000;
+  height: 100vh; }
+  .home img {
+    width: 350px;
+    height: auto; }
+  .home h3 {
+    margin-top: 4rem; }
+  .home input {
+    max-width: 300px;
+    margin: .8rem 0; }
+
+.layout-mode {
+  text-align: right;
+  color: #404040;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 657px;
+  background-image: linear-gradient(to bottom, rgba(255, 208, 208, 0.808), white), url("/assets/images/atm-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .layout-mode h2 {
+    margin-top: 3rem;
+    padding: 0 2rem;
+    color: #000;
+    line-height: 1.6;
+    font-weight: 700; }
+  .layout-mode img {
+    position: absolute;
+    width: 250px;
+    top: 5rem; }
+.btn{
+    cursor: pointer;
+}
+.btn:focus, input:focus {
+  box-shadow: none!important; }
+
+.btn-red {
+  background: #db0011!important;
+  color: #fff!important;
+  padding: .375rem 2.75rem!important; }
+  .btn-red:hover {
+    color: #fff !important; }
+
+.btn-full {
+  border-radius: 0!important;
+  border: 1px solid #404040!important;
+  width: 100%;
+  padding: 1rem!important;
+  font-size: 1.3rem!important;
+  font-weight: 600!important;
+  text-align: right!important; }
+  .btn-full:hover {
+    background: #db0011;
+    color: #fff!important; }
+
+.line{
+display: inline-block;
+width: 100%;
+height: 2px;
+border-bottom: 2px dashed #db0011;
+}
+.transparent-input {
+  width: 95px!important;
+  border: none;
+  background: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }

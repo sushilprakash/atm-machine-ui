@@ -1,0 +1,9 @@
+<section class="wrapper">
+  <div class="home">
+      <img src="/assets/images/logo-white.svg" alt="logo">
+      <h3>Please insert your card</h3>
+      <input type="text" maxlength="19" class="form-control" 
+       [(ngModel)]="cardInput" (keyup)="formatCard()" appAutofocus>
+      <a class="btn btn-red mt-4" (keyup.enter) = "onSubmit()" (click)="onSubmit()">SUBMIT</a>
+  </div>
+</section>
