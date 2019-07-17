@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./select-services.component.css']
 })
 export class SelectServicesComponent implements OnInit {
-
-  constructor(private router: Router) { }
+  pinInput: number;
+  constructor() { }
   fixedBal: number[];
+
+  // onSelectBal(){
+  //   let bal = 
+  //   this.router.navigate(['available-notes', bal]);
+  //   console.log(this.selectedBal);
+  // }
+
   ngOnInit() {
-    this.fixedBal= [500,1000,2000,3000,4000,null];
+    this.fixedBal= [500,1000,2000,3000,4000,0];
   }
 
 

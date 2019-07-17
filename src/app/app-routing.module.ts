@@ -14,10 +14,9 @@ const routes: Routes = [
   {path: 'enter-pin', component: EnterPinComponent },
   {path: 'select-mode', component: SelectModeComponent },
   {path: 'select-service', component: SelectServicesComponent },
-  {path: 'available-notes', component: AvailableNotesComponent },
+  {path: 'available-notes/:val', component: AvailableNotesComponent },
   {path: 'processing', component: ProcessingPageComponent },
   {path: 'thanks', component:ThanksComponent},
-//  {path: 'not-found', component: PageNotFoundComponent },
   {path: '**', redirectTo: '/welcome' }
 ];
 

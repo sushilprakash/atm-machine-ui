@@ -2,8 +2,18 @@
   <div class="home">
       <img src="/assets/images/logo-white.svg" alt="logo">
       <h3>Please insert your card</h3>
-      <input type="text" maxlength="19" class="form-control" 
-       [(ngModel)]="cardInput" (keyup)="formatCard()" appAutofocus>
-      <a class="btn btn-red mt-4" (keyup.enter) = "onSubmit()" (click)="onSubmit()">SUBMIT</a>
+      <form [formGroup] = "cardvalue">
+        <div class="form-group">
+          <input type="text" maxlength="19" [(ngModel)]="cardInput" formControlName="cnumber" class="form-control" 
+           (keyup)="formatCard()" appAutofocus>
+          <!-- <div *ngIf="cardvalue.get('cnumber').required" class="text-danger">Please enter valid card number.</div> -->
+          <div *ngIf="cardvalue.get('cnumber').onlynumbers" class="text-danger">Only numbers should contains.</div>
+        </div>
+        <!-- <div class="form-group">
+          <input type="text" maxlength="12" FormControlName ="phone" class="form-control">
+        </div> -->
+        <!-- <p>{{form.value | json}}</p> -->
+        <a class="btn btn-red mt-4"(click)="onSubmit()" (keyup.enter) = "onSubmit()">SUBMIT</a>
+      </form>
   </div>
 </section>

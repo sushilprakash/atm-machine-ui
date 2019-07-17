@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enter-pin.component.css']
 })
 export class EnterPinComponent implements OnInit {
-pinInput: string;
+pinInput: string = '';
   constructor(private router: Router) { }
 
   ngOnInit() {
